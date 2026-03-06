@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | ChartReader.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 pb-12">
+        <header class="pt-6 pb-5 flex flex-wrap items-center justify-between gap-4">
+            <a href="dashboard.html" class="brand-font text-2xl font-bold text-cyan-300">ChartReader.io Admin</a>
+            <a href="dashboard.html" class="btn-outline">Back to Dashboard</a>
+        </header>
+
+        <div id="flash-message" class="hidden mb-4"></div>
+
+        <section class="grid md:grid-cols-2 xl:grid-cols-4 gap-3 mb-4">
+            <article class="stats-chip">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Total users</p>
+                <p id="total-users" class="text-3xl font-bold text-cyan-200 mt-2">0</p>
+            </article>
+            <article class="stats-chip">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Monthly revenue</p>
+                <p id="monthly-revenue" class="text-3xl font-bold text-cyan-200 mt-2">$0</p>
+            </article>
+            <article class="stats-chip">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Analyses</p>
+                <p id="total-analyses" class="text-3xl font-bold text-cyan-200 mt-2">0</p>
+            </article>
+            <article class="stats-chip">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Active subs</p>
+                <p id="active-subscriptions" class="text-3xl font-bold text-cyan-200 mt-2">0</p>
+            </article>
+        </section>
+
+        <section class="grid xl:grid-cols-2 gap-4">
+            <article class="glass-card rounded-3xl p-5">
+                <h2 class="brand-font text-xl font-bold mb-3">Recent analyses</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Confidence</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-recent-analyses">
+                            <tr><td colspan="3" class="text-slate-500">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="glass-card rounded-3xl p-5">
+                <h2 class="brand-font text-xl font-bold mb-3">Users</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Plan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-users">
+                            <tr><td colspan="3" class="text-slate-500">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section class="glass-card rounded-3xl p-5 mt-4">
+            <h2 class="brand-font text-xl font-bold mb-3">Payments</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Amount</th>
+                            <th>Currency</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-payments">
+                        <tr><td colspan="5" class="text-slate-500">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

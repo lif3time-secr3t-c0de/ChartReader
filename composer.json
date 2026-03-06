@@ -1,0 +1,25 @@
+{
+    "name": "chartreader/platform",
+    "description": "AI-Powered Chart Analysis",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "stripe/stripe-php": "^19.3",
+        "vlucas/phpdotenv": "^5.6.3"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "scripts": {
+        "test": "php tests/ResponseTest.php",
+        "serve": "php -S localhost:8000 -t public router.php"
+    },
+    "authors": [
+        {
+            "name": "ChartReader",
+            "email": "admin@chartreader.io"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartReader.io | AI Trading Chart Analysis</title>
+    <meta name="description" content="Analyze trading charts with AI, track history, manage favorites, and export reports.">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 pb-20">
+        <header class="pt-6 pb-4 flex items-center justify-between">
+            <a href="index.html" class="brand-font text-2xl font-bold text-cyan-300">ChartReader.io</a>
+            <nav class="hidden md:flex items-center gap-5 text-sm text-slate-300">
+                <a href="#features" class="hover:text-cyan-300">Features</a>
+                <a href="#pricing" class="hover:text-cyan-300">Pricing</a>
+                <a href="login.html" class="btn-outline">Login</a>
+                <a href="register.html" class="btn-primary">Create Account</a>
+            </nav>
+            <a href="register.html" class="md:hidden btn-primary">Start</a>
+        </header>
+
+        <main class="pt-8 md:pt-14">
+            <section class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <p class="badge mb-4">Production Ready Platform</p>
+                    <h1 class="brand-font text-4xl md:text-6xl font-bold leading-tight mb-5">AI chart analysis that traders can trust</h1>
+                    <p class="text-slate-300 text-lg mb-7">Upload any candlestick chart and get structured insights for trend, support and resistance, sentiment score, and trade idea. Keep every report in your private dashboard.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a id="start-free-btn" href="register.html" class="btn-primary">Start Free</a>
+                        <a id="go-login-btn" href="login.html" class="btn-outline">I Have Account</a>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-3xl p-6 md:p-8">
+                    <h2 class="brand-font text-2xl font-bold mb-3">Quick Upload Preview</h2>
+                    <p class="text-slate-300 text-sm mb-4">Drag a chart image here. You will be guided to the dashboard to run full AI analysis.</p>
+                    <label id="drop-zone-home" class="drop-zone rounded-2xl p-10 text-center block cursor-pointer">
+                        <input id="file-input-home" type="file" class="hidden" accept="image/png,image/jpeg,image/webp">
+                        <div class="text-cyan-300 text-4xl mb-3">Chart</div>
+                        <p class="text-slate-200 font-semibold">Drop image or click to choose</p>
+                        <p class="text-slate-400 text-sm mt-1">PNG, JPG, WEBP up to 5MB</p>
+                    </label>
+                    <p class="text-slate-500 text-xs mt-3">Tip: once logged in, uploaded charts are saved in SQLite history with favorites support.</p>
+                </div>
+            </section>
+
+            <section id="features" class="mt-20 grid md:grid-cols-3 gap-4">
+                <article class="glass-card rounded-2xl p-5">
+                    <h3 class="font-bold text-cyan-200 mb-2">Structured AI Output</h3>
+                    <p class="text-slate-300 text-sm">JSON-first technical analysis with confidence score, trade ideas, and annotation coordinates.</p>
+                </article>
+                <article class="glass-card rounded-2xl p-5">
+                    <h3 class="font-bold text-cyan-200 mb-2">Personal User Panel</h3>
+                    <p class="text-slate-300 text-sm">History timeline, favorites, profile settings, password change, and Stripe billing controls.</p>
+                </article>
+                <article class="glass-card rounded-2xl p-5">
+                    <h3 class="font-bold text-cyan-200 mb-2">Secure API + SQLite</h3>
+                    <p class="text-slate-300 text-sm">CSRF protection, session auth, prepared SQL queries, and upload validation with MIME checks.</p>
+                </article>
+            </section>
+
+            <section id="pricing" class="mt-14 grid md:grid-cols-2 gap-4">
+                <article class="glass-card rounded-2xl p-6">
+                    <h3 class="brand-font text-2xl font-bold mb-1">Free</h3>
+                    <p class="text-slate-400 mb-4">For getting started</p>
+                    <p class="text-4xl font-bold mb-4">$0 <span class="text-slate-400 text-lg">/month</span></p>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-5">
+                        <li>- Core analysis workflow</li>
+                        <li>- History and favorites</li>
+                        <li>- CSV and PDF export</li>
+                    </ul>
+                    <a href="register.html" class="btn-outline w-full">Use Free Plan</a>
+                </article>
+                <article class="glass-card rounded-2xl p-6 border-cyan-500/50">
+                    <p class="badge mb-2">Pro</p>
+                    <h3 class="brand-font text-2xl font-bold mb-1">Premium</h3>
+                    <p class="text-slate-400 mb-4">For advanced traders</p>
+                    <p class="text-4xl font-bold mb-4">$29 <span class="text-slate-400 text-lg">/month</span></p>
+                    <ul class="space-y-2 text-sm text-slate-300 mb-5">
+                        <li>- Priority processing</li>
+                        <li>- Billing portal and subscription controls</li>
+                        <li>- Ongoing product upgrades</li>
+                    </ul>
+                    <a href="register.html" class="btn-primary w-full">Go Premium</a>
+                </article>
+            </section>
+        </main>
+
+        <footer class="mt-20 pt-6 border-t border-slate-800 text-slate-400 text-sm flex flex-wrap justify-between gap-2">
+            <span>&copy; 2026 ChartReader.io</span>
+            <span>Built with PHP, SQLite, Stripe, and Gemini</span>
+        </footer>
+    </div>
+</body>
+</html>

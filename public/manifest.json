@@ -1,0 +1,10 @@
+{
+  "name": "ChartReader.io",
+  "short_name": "ChartReader",
+  "description": "AI-Powered Financial Chart Analysis",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#3b82f6",
+  "icons": []
+}

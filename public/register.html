@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | ChartReader.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <main class="min-h-screen flex items-center justify-center px-4 py-10">
+        <section class="glass-card rounded-3xl w-full max-w-md p-7 md:p-8">
+            <a href="index.html" class="brand-font text-2xl font-bold text-cyan-300">ChartReader.io</a>
+            <h1 class="brand-font text-3xl font-bold mt-5 mb-2">Create your account</h1>
+            <p class="text-slate-400 text-sm mb-6">Start analyzing charts with a secure SQLite-backed user account.</p>
+
+            <div id="auth-message" class="hidden mb-4"></div>
+
+            <form id="register-form" class="space-y-4">
+                <div>
+                    <label for="register-name" class="block text-sm mb-1 text-slate-300">Full name</label>
+                    <input id="register-name" type="text" class="field" required autocomplete="name">
+                </div>
+                <div>
+                    <label for="register-email" class="block text-sm mb-1 text-slate-300">Email</label>
+                    <input id="register-email" type="email" class="field" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="register-password" class="block text-sm mb-1 text-slate-300">Password</label>
+                    <input id="register-password" type="password" class="field" minlength="8" required autocomplete="new-password">
+                </div>
+                <button id="register-submit" type="submit" class="btn-primary w-full">Create Account</button>
+            </form>
+
+            <p class="text-sm text-slate-400 mt-6">Already registered? <a href="login.html" class="text-cyan-300 hover:text-cyan-200">Sign in</a></p>
+        </section>
+    </main>
+</body>
+</html>

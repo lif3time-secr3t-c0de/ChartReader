@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ChartReader.io</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <main class="min-h-screen flex items-center justify-center px-4 py-10">
+        <section class="glass-card rounded-3xl w-full max-w-md p-7 md:p-8">
+            <a href="index.html" class="brand-font text-2xl font-bold text-cyan-300">ChartReader.io</a>
+            <h1 class="brand-font text-3xl font-bold mt-5 mb-2">Welcome back</h1>
+            <p class="text-slate-400 text-sm mb-6">Sign in to access your trading analysis dashboard.</p>
+
+            <div id="auth-message" class="hidden mb-4"></div>
+
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="login-email" class="block text-sm mb-1 text-slate-300">Email</label>
+                    <input id="login-email" type="email" class="field" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="login-password" class="block text-sm mb-1 text-slate-300">Password</label>
+                    <input id="login-password" type="password" class="field" required autocomplete="current-password">
+                </div>
+                <button id="login-submit" type="submit" class="btn-primary w-full">Sign In</button>
+            </form>
+
+            <p class="text-sm text-slate-400 mt-6">No account? <a href="register.html" class="text-cyan-300 hover:text-cyan-200">Create one</a></p>
+        </section>
+    </main>
+</body>
+</html>
