@@ -32,5 +32,5 @@ if (pathinfo($uri, PATHINFO_EXTENSION) !== '') {
     return true;
 }
 
-require __DIR__ . '/public/index.php';
+require __DIR__ . '/public/index.html';
 return true;
